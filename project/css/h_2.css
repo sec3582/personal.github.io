@@ -1,0 +1,365 @@
+
+.wrap{
+    width:1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.header{
+    width:100%;height:160px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #a98467;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+.header h3{
+    position: relative;
+    width:30%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:solid 2px white;
+}
+.header h3::before{
+    width:148px;
+    content: "";
+    display: block;
+    border:solid 1px white; 
+    position: absolute;
+    left:-150px;
+    top:15px;
+}
+.header h3::after{
+    width:148px;
+    content: "";
+    display: block;
+    border:solid 1px white; 
+    position: absolute;
+    left:310px;
+    top:15px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:#6c584c;
+}
+
+/*左邊*/
+.content-left{
+    width:27%;height:auto;
+    padding-left:1.5%;
+    padding-right: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    
+}
+.picture{
+    margin-top: 30px;margin-bottom: 20px;
+    width:150px;height:150px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.picture img{
+    width:100%;height:100%;
+}
+.personal h3{
+    padding-left: 10px;
+    border-bottom: solid 2px #6c584c;
+    width: 90%;
+}
+.personal table{
+   text-align: left;
+   width:95%;
+   margin-bottom: 15px;
+}
+.personal th,td{
+    border-bottom: dashed 1px #a98467;
+}
+.personal td{
+    padding-left: 10px;
+}
+
+.personal p{
+    padding-left: 10px;
+    margin-bottom: 150px;
+}
+.links{
+    width:100%;
+}
+.links h3{
+    padding-left: 10px;
+    border-bottom: solid 2px #6c584c;
+    width: 90%;
+}
+.links table{
+    text-align: left;
+    border-spacing: 10px 5px;
+    width:95%;
+    margin-bottom: 20px;
+}
+.links th{
+    font-size: 25px;
+    text-align: center;
+    color:#6c584c;
+}
+.links th,.links td{
+    border: none;
+}
+
+/*右邊*/
+.content-right{
+    width:65%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffcf2;
+}
+.profile{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.profile h3,.work h3,.software h3{
+    border-bottom: solid 2px #6c584c;
+}
+/*圓形圖*/
+.c-pro{
+    display: flex;
+    justify-content: space-around;
+}
+
+.c-progress-1{
+    position: relative;
+    display: inline-block;
+    width:100px;height:100px;
+    border-radius: 50%;
+    background: conic-gradient(#FFCDB2 0, #FFCDB2);      
+}
+.c-progress-2{
+    position: relative;
+    display: inline-block;
+    width:100px;height:100px;
+    border-radius: 50%;
+    background: conic-gradient(#FFCDB2 0 25%,#b08968 25% 75%);       
+}
+.c-progress-3{
+    position: relative;
+    display: inline-block;
+    width:100px;height:100px;
+    border-radius: 50%;
+    background: conic-gradient(#FFCDB2 0 45%, #b08968 45% 55%);        
+}
+.c-progress-4{
+    position: relative;
+    display: inline-block;
+    width:100px;height:100px;
+    border-radius: 50%;
+    background: conic-gradient(#FFCDB2 0 90%, #b08968 90% 100%);      
+}
+.c-progress-5{
+    position: relative;
+    display: inline-block;
+    width:100px;height:100px;
+    border-radius: 50%;
+    background: conic-gradient(#FFCDB2 0 35%, #b08968 35% 65%);      
+}
+.mask{
+    width:80px;height:80px;
+    border-radius: 50%;
+    background-color:#fffcf2;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.mask p{
+    position: absolute;
+    left:15px;
+    top:15px;
+}
+/*箭頭流程*/
+.work-con{
+    display: flex;
+}
+.arrow{
+    margin-top: 40px;
+    width:20%;
+}
+.box1{
+    position: relative;
+    width:80px;height:30px;
+    background: #a98467;
+}
+.box1 p{
+    position: absolute;
+    color: #fffcf2;
+    top:-10px;left:20px;
+    font-weight: bold;
+}
+.box-arrow1{
+    position: absolute;
+    width:22px;height:22px;
+    background: #a98467;
+    transform: rotate(45deg);
+    left:69px;
+    top:4px;
+}
+.box2{
+    position: relative;
+    width:80px;height:30px;
+    background: #a98467;
+    top:60px;
+}
+.box2 p{
+    position: absolute;
+    color: #fffcf2;
+    top:-10px;left:20px;
+    font-weight: bold;
+}
+.box-arrow2{
+    position: absolute;
+    width:22px;height:22px;
+    background: #a98467;
+    transform: rotate(45deg);
+    left:69px;
+    top:3.7px;
+}
+.box3{
+    position: relative;
+    width:80px;height:30px;
+    background: #a98467;
+    top:130px;
+}
+.box3 p{
+    position: absolute;
+    color: #fffcf2;
+    top:-10px;left:20px;
+    font-weight: bold;
+}
+.box-arrow3{
+    position: absolute;
+    width:22px;height:22px;
+    background: #a98467;
+    transform: rotate(45deg);
+    left:69px;
+    top:3.7px;
+}
+.box4{
+    position: relative;
+    width:80px;height:30px;
+    background: #a98467;
+    top:190px;
+}
+.box4 p{
+    position: absolute;
+    color: #fffcf2;
+    top:-10px;left:20px;
+    font-weight: bold;
+}
+.box-arrow4{
+    position: absolute;
+    width:22px;height:22px;
+    background: #a98467;
+    transform: rotate(45deg);
+    left:69px;
+    top:3.7px;
+}
+
+.line{
+    position: relative;
+    width:2px;
+    background:#a98467;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.bit{
+    position: absolute;
+    width:20px;height:20px;
+    border-radius: 50%;
+    background: #c6ac8f;
+    left:-9px;
+}
+.bit1{
+    position: absolute;
+    width:20px;height:20px;
+    border-radius: 50%;
+    background:#c6ac8f;
+    top:95px;left:-9px;
+}
+.bit2{
+    position: absolute;
+    width:20px;height:20px;
+    border-radius: 50%;
+    background:#c6ac8f;
+    top:195px;left:-9px;
+}
+.bit3{
+    position: absolute;
+    width:20px;height:20px;
+    border-radius: 50%;
+    background:#c6ac8f;
+    top:290px;left:-9px;
+}
+
+.b-progress{
+    width:70%;   
+}
+.b-progress li{
+    list-style: none;
+}
+
+/*長條進度圖*/
+.software{
+    padding-bottom: 30px;
+}
+.lon-pro{
+    display: flex;
+}
+.pro-left{
+    width:50%;
+    
+}
+.pro-right{
+    width:50%;
+
+}
+.pro-contain {
+    width: 300px;
+    height: 15px;
+    border-radius: 25px;
+    background:#f9dcc4;
+}
+.pro-in1 {
+    width: 50%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background:#fec89a;
+}
+.pro-in2 {
+    width: 70%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background:#fec89a;
+}
+.pro-in3{
+    width: 30%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background:#fec89a;
+}
+.pro-in4 {
+    width: 60%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background:#fec89a;
+}
+
+.footer{
+    width:100%;height:30px;
+    background-color:#a98467;
+}
